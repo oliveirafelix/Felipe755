@@ -25,3 +25,7 @@ input {
     padding: 10px;
     margin-bottom: 15px;
 }
+
+button {
+    background-color: #07bebe;
+}
