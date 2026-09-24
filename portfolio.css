@@ -215,6 +215,56 @@ section {
 }
 
 /*===============================*/
+/*          PROJETOS             */
+/*===============================*/
+
+.projetos-secao {
+    background-color: #0f0f14;
+}
+
+.projetos {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    background-color: #191922;
+    padding: 30px;
+    border: 1px solid #292936;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #7c5cff;
+}
+
+.numero-projeto {
+    color: #7c5cff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #9c9cab;
+    margin-bottom: 25px;
+}
+
+.card > a {
+    color: #7c5cff;
+    font-weight: bold;
+}
+
+
+/*===============================*/
 /*         CONTATO               */
 /*===============================*/
 
