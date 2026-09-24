@@ -124,15 +124,143 @@ nav a:hover {
     border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
+    
 }
 
 .botao:hover {
-    background-color: #6847ff;
+    background-color: transparent;
+    border: 1px solid #7c5cff;
     transform: translateY(-3px);
 }
 
 .botao-secundario {
-    background-color: #5c7cff;
+    background-color: transparent;
     border: 1px solid #7c5cff;
-    color: #7c5cff
+    color: #7c5cff;
+}
+
+.botao-secundario:hover {
+    background-color: #7c5cff;
+    color: #ffffff;
+}
+
+/*===============================*/
+/*           SEÇÔES              */
+/*===============================*/
+
+section {
+    padding: 100px 10%;
+}
+
+.titulo-secao {
+    margin-bottom: 50px;
+}
+
+.titulo-secao p {
+    color: #7c5cff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    font-size: 38px;
+}
+
+/*===============================*/
+/*            SOBRE              */
+/*===============================*/
+
+.sobre {
+    background-color: #15151d;
+}
+
+.sobre-conteudo {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre-texto {
+    flex: 1;
+    color: #b8b8c7;
+}
+
+.sobre-texto p {
+    margin-bottom: 20px;
+}
+
+.habilidades {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.habilidade {
+    background-color: #1d1d27;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #7c5cff;
+}
+
+.habilidade h3 {
+    margin-bottom: 5px;
+}
+
+.habilidade p {
+    color: #9292a0;
+    font-size: 14px;
+}
+
+/*===============================*/
+/*         CONTATO               */
+/*===============================*/
+
+.contato {
+    background-color: #15151d;
+    text-align: center;
+}
+
+.contato .titulo-secao {
+    margin-bottom: 20px;
+}
+
+.contatp-texto {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #9c9cab;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contato-links a {
+    border: 1px solid #343442;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contato-links a:hover {
+    border-color: #7c5cff;
+    color: #7c5cff;
+    transform: translateY(-3px);
+}
+
+/*===============================*/
+/*           RODAPÉ              */
+/*===============================*/
+
+footer {
+    padding: 25px 10px;
+    background-color: #0b0b10;
+    color: #737380;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
 }
