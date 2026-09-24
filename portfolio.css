@@ -263,6 +263,24 @@ section {
     font-weight: bold;
 }
 
+/*===============================*/
+/*          TECNOLOGIAS          */
+/*===============================*/
+
+.tecnologias {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tecnologias span {
+    background-color: #262633;
+    color: #bdbdc9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
 
 /*===============================*/
 /*         CONTATO               */
