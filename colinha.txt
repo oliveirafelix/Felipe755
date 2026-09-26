@@ -1,0 +1,21 @@
+/*===============================*/
+/*           LINUX               */
+/*===============================*/
+
+link para prova == www.w3schools.com/cssref/
+
+
+pwd = mostra onde esta no linux
+ls = lista arquivos e pastas onde estão
+ssh hefelipe755@193.111.116.99 = logar no linux
+mkdir 'nome da pasta' = criar nova pasta
+clear = limpar terminal
+ls -la = lista e mostra arquivos ocultos
+touch 'nome do arquivo' = para criar um arquivo
+para editar um arquivo escreve nano 'nome do arquivo'
+cat 'nome do arquivo' = para mostrar oque foi editado
+clonar arquivos é com cp
+cd... usar para voltar em uma pasta mas somente se estiver dentro de uma pasta, então sempre usar o (pwd) antes para saber se realmente está em uma pastarm nome do arquivo remove o arquivo 
+rm -r para apagar pasta
+rm -rf * apaga tudo
+HTML = HyperText Markup Language
