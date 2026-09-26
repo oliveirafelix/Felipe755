@@ -388,4 +388,51 @@ nav {
 /*===============================*/
 /*        TODAS AS SEÇÔES        */
 /*===============================*/
+
+section {
+    padding: 70px 5%;
+}
+
+/*===============================*/
+/*           SOBRE               */
+/*===============================*/
+
+.sobre-conteudo {
+    flex-direction: column;
+    align-items: center;
+}
+
+/*===============================*/
+/*          PROJETOS             */
+/*===============================*/
+
+.projetos {
+    flex-direction: column;
+}
+
+/*===============================*/
+/*           BOTÔES              */
+/*===============================*/
+
+.botoes {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*===============================*/
+/*           CONTATO             */
+/*===============================*/
+
+.contato-links {
+    flex-wrap: wrap;
+}
+
+/*===============================*/
+/*             RODAPÉ            */
+/*===============================*/
+footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
 }
