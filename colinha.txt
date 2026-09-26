@@ -18,4 +18,5 @@ clonar arquivos é com cp
 cd... usar para voltar em uma pasta mas somente se estiver dentro de uma pasta, então sempre usar o (pwd) antes para saber se realmente está em uma pastarm nome do arquivo remove o arquivo 
 rm -r para apagar pasta
 rm -rf * apaga tudo
+git clone https://github.com/oliveirafelix/Felipe755 www == clonar o github
 HTML = HyperText Markup Language
