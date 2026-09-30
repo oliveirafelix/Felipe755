@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="verificador.css">
 </head>
 <body>
+    <main>
     <!--MENU-->
     <div class="logo">
         <h2>Verificação de idade</h2>
@@ -37,4 +38,5 @@
     </div>
     </form>
     <h2> <?= $resultado ?> </h2>
+</main>
 </body>

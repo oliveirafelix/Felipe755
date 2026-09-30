@@ -20,6 +20,7 @@
 </head>
 <body>
     <!--MENU-->
+    <main>
     <div class="logo">
         <h2>Verificação de idade</h2>
     <nav>
@@ -37,4 +38,5 @@
     </div>
     </form>
     <h2> <?= $resultado ?> </h2>
+</main>
 </body>
