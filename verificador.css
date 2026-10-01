@@ -29,9 +29,10 @@ nav {
 }
 
 .mensagem {
-    align-items: center;
-    height: auto;
-    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
 }
 /*===============================*/
 /*      MUDANÇAS MINHAS          */
