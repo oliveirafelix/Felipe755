@@ -74,7 +74,7 @@ main {
     align-items: center;
 }
 
-nav {
+nav a{
     background-color: #08086d;
     color: #0459bb;
     padding: 5px;
