@@ -40,6 +40,8 @@ nav {
 
 main {
     background-color: #383838;
+    height: 500px;
+    width: 1000px;
     padding: 10px;
     border-radius: 15px;
 
