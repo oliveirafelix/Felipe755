@@ -37,7 +37,7 @@ main {
     background-color: #383838;
     width: 500px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }

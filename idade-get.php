@@ -32,6 +32,7 @@
     <form method="GET">
         <label>Nome:</label>
         <input type="text" class="nome" id="nome" name="nome">
+        <label>Idade:</label>
         <input type="numero" class="idade" id="idade" name="idade">
 
         <button type="submit">Enviar</button>
