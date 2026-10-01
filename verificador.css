@@ -75,8 +75,8 @@ main {
 
 a {
     background-color: #08086d;
-    color: aquamarine;
+    color: #0459bb;
     padding: 5px;
     border-radius: 7px;
-    align-self: flex-start;
+    text-align: justify;
 }
