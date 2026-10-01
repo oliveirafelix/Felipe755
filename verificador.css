@@ -50,9 +50,16 @@ main {
 
     text-align: center;
 } 
-    
+
 /*===============================*/
 /*      MUDANÇAS MINHAS          */
 /*===============================*/
 
 
+body {
+    background-color: #001136;
+}
+
+main {
+    background-color: #333333;
+}
