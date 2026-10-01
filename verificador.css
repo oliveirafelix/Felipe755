@@ -43,7 +43,7 @@ main {
     height: 500px;
     width: 80%;
     max-width: 1000px;
-    padding: 1000px;
+    padding: 100px;
     border-radius: 15px;
     
     display: flex;
