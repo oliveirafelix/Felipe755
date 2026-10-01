@@ -78,5 +78,5 @@ a {
     color: #0459bb;
     padding: 5px;
     border-radius: 7px;
-    text-align: justify;
+    justify-content: flex-start;
 }
