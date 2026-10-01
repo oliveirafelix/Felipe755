@@ -66,5 +66,6 @@ body {
 main {
     background-color: #333333;
     max-width: 80%;
+    justify-content: center;
 
 }
