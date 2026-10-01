@@ -8,6 +8,8 @@ link para prova == www.w3schools.com/cssref/
 pwd = mostra onde esta no linux
 ls = lista arquivos e pastas onde estão
 ssh felipe755@193.111.116.99 = logar no linux
+cd www = nn sei pra q, mas pra logar
+git pull = pra salvar
 mkdir 'nome da pasta' = criar nova pasta
 clear = limpar terminal
 ls -la = lista e mostra arquivos ocultos
