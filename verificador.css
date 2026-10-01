@@ -72,3 +72,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+nav {
+    background-color: #08086d;
+    color: aquamarine;
+    text-align: left;
+    align-items: start;
+}
