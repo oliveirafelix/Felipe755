@@ -27,7 +27,6 @@
         <a href="index.php">Início</a>
     </nav>
     </div>
-
     <div class="mensagem">
     <form method="GET">
         <label>Nome:</label>

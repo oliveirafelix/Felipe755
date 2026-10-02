@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danilo Guido / Portfólio</title>
+    <title>Felipe Oliveira / Portfólio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
@@ -13,7 +13,7 @@
 
     <header>
         <div class="logo">
-            <h2>Danilo <span>Guido</span></h2>
+            <h2>Felipe <span>Oliveira</span></h2>
         </div>
         <nav>
             <a href="#inicio">Início</a>
@@ -32,7 +32,7 @@
         <section id="inicio" class="inicio">
             <div class="inicio-conteudo">
                 <p class="apresentacao">Olá, eu sou</p>
-                <h1>Danilo Guido</h1>
+                <h1>Felipe Oliveira</h1>
                 <h2>Desenvolvedor de software.</h2>
                 <p class="descricao">
                     Estou iniciando na programação.
@@ -50,7 +50,7 @@
 
             <div class="titulo-secao">
                 <p>Conheça um pouco</p>
-                <h2>Sobre mim !</h2>
+                <h2>Sobre mim!</h2>
             </div>
 
             <div class="sobre-conteudo">
