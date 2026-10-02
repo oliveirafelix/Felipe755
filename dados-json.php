@@ -19,6 +19,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $historia_prova2 = $_POST["historia_prova2"];
     $historia_prova3 = $_POST["historia_prova3"];
 
+    // ================================
+    // ORGANIZA OS DADos EM UM ARRAY
+    // ================================
+    $novoAluno = [
+        "nome" => $nome,
+        "idade" => $idade,
+
+        "notas" => [
+            "portugues" => [
+                "prova1" => $portugues_prova1,
+                "prova2" => $portugues_prova2,
+                "prova3" => $portugues_prova3
+            ],
+            "matematica" => [
+                "prova1" => $matematica_prova1,
+                "prova2" => $matematica_prova2,
+                "prova3" => $matematica_prova3
+            ],
+            "historia" => [
+                "prova1" => $historia_prova1,
+                "prova2" => $historia_prova2,
+                "prova3" => $historia_prova3
+            ]
+        ]
+    ];
+
+
     echo "<h2>DADOS RECEBIDOS:</h2>";
 
     echo "Nome: " . $nome . "<br>";
