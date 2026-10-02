@@ -88,8 +88,8 @@
 
                     <div class="habilidade">
                         <h2>PHP</h2>
-                        <h4> • Em breve</h4>
-                        <p>Próxima etapa dos meus estudos, com foco em desenvolvimento back-end e integração com páginas web.</p>
+                        <h4> • Iniciante</h4>
+                        <p>Estudando PHP e seus fundamentos, com foco em desenvolvimento back-end e integração com aplicações web.</p>
                     </div>
 
                 </div>
