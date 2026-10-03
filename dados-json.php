@@ -50,32 +50,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
 
     // SEVE PARA CNVERETER JSON PARA ARRAY PHP
+    // O true SERVE PARA CONVERTER O JSON EM ARRAY ASSOCIATIVO PARA PHP LER
+    $alunos = json_decode($conteudoJson, true);
 
-    $alunos = json_decode();
+    // ADICIONAR O NOVO ALUNO
+    $alunos[] = $novoAluno;
 
+    // CONVERTER O ARRAY PHP PARA JSON
 
-    echo "<h2>DADOS RECEBIDOS:</h2>";
+    $jsonAtualizado = json_encode(
+        $alunos,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
 
-    echo "Nome: " . $nome . "<br>";
-    echo "Idade: " . $idade . "<br><br>";
-
-    echo "<strong>Português:</strong><br>";
-    echo "Prova 1: " . $portugues_prova1 . "<br>";
-    echo "Prova 2: " . $portugues_prova2 . "<br>";
-    echo "Prova 3: " . $portugues_prova3 . "<br><br>";
-
-    echo "<strong>Matemática:</strong><br>";
-    echo "Prova 1: " . $matematica_prova1 . "<br>";
-    echo "Prova 2: " . $matematica_prova2 . "<br>";
-    echo "Prova 3: " . $matematica_prova3 . "<br><br>";
-
-    echo "<strong>História</strong><br>";
-    echo "Prova 1: " . $historia_prova1 . "<br>";
-    echo "Prova 2: " . $historia_prova2 . "<br>";
-    echo "Prova 3: " . $historia_prova3 . "<br><br>";
+    // SALVAR NO ARQUIVO JSON
+    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
 
 }
     
+// LEITURA DOS DADOS PARA EXIBIÇÂO
+
+// L~e o arquivo JSON
+$conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+
+// Converte o JSON para ARRAY PHP
+$alunos = json_decode($conteudoJson, true);
+
+
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -121,5 +122,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="number" name="historia_prova3" min="0" max="10" step="0.1" required>
         <button type="submit">Enviar</button>
     </form>
+
+    <h1>ALUNOS CADASTRADOS</h1>
+
+    <?php foreach ($alunos as $aluno) { ?>
+    
+        <h2> <?= $aluno["nome"]   ?> </h2>
+        <p> Idade: <?= $aluno["idade"] ?></p>
+
+        <!-- PORTUGUES -->
+         <h2>PORTUGUÊS</h2>
+         <p>Prova 1: <?= $aluno["notas"]["portugues"]["prova1"]?></p>
+         <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova2"]?></p>
+         <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova3"]?></p>
+
+         <!-- MATEMATICA -->
+         <h2>MATEMATICA</h2>
+         <p>Prova 1: <?= $aluno["notas"]["matematica"]["prova1"]?></p>
+         <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova2"]?></p>
+         <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova3"]?></p>
+         
+         <!-- HISTÓRIA -->
+         <h2>HISTÓRIA</h2>
+         <p>Prova 1: <?= $aluno["notas"]["historia"]["prova1"]?></p>
+         <p>Prova 2: <?= $aluno["notas"]["historia"]["prova2"]?></p>
+         <p>Prova 3: <?= $aluno["notas"]["historia"]["prova3"]?></p>
+
+
+    <?php } ?>
+
+    
 </body>
 </html>

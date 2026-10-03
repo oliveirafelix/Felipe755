@@ -22,3 +22,8 @@ rm -r para apagar pasta
 rm -rf * apaga tudo
 git clone https://github.com/oliveirafelix/Felipe755 www == clonar o github
 HTML = HyperText Markup Language
+
+JSON_PRETTY_PRINT == para quando você passar o codigo para o json deixa bonito(importante)
+JSON_UNESCAPED_UNICODE == para funcionar o caracteres especiais 
+os dois juntos == JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+foreach == para cada registro de um array vai executar o código
