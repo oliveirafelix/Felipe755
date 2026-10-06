@@ -28,14 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $produto,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
-    
+
     file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
-
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -47,13 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <form method="POST">
-        <h1>CADASTRO DE PRODUTOS</h1>
+        <h1>SISTEMA DE CADASTRO</h1>
+        <h2>cadastrando fabricante</h2>
         <label>Nome do fabricante:</label>
         <input type="text" name="fabricante" required>
         <br><br>
         <label>País de origem:</label>
         <input type="text" name="origem" required>
-        <br><br>
+        <h2>cadastrando produto</h2>
         <label>Nome do produto:</label>
         <input type="text" name="nomeProduto" required>
         <br><br>
@@ -69,5 +64,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label>Quantidade em estoque:</label>
         <input type="text" name="quantidade" required>
     </form>
+    
+    <h1>Produtos cadastrados</h1>
+    <?php foreach ($produto as $novoProduto) { ?>
+        <h2>Dados do fabricante</h2>
+        <p>Fabricante: <? $novoProduto["fabricante"]?></p>
+        <p>País de origem: <? $novoProduto["origem"]?></p>
+
+    
+    
+    
+    <?php } ?>
 </body>
 </html>
