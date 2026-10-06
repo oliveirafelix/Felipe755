@@ -70,10 +70,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Dados do fabricante</h2>
         <p>Fabricante: <? $novoProduto["fabricante"]?></p>
         <p>País de origem: <? $novoProduto["origem"]?></p>
-
-    
-    
-    
+        <h2>Dados do produto</h2>
+        <p>Nome do produto: <? $novoProduto["nomeProduto"]?></p>
+        <p>Categoria: <? $novoProduto["categoria"]?></p>
+        <p>Marca: <? $novoProduto["marca"]?></p>
+        <p>Preço: <? $novoProduto["preco"]?></p>
+        <p>Quantidade em estoque: <? $novoProduto["quantidade"]?></p>
     <?php } ?>
 </body>
 </html>
