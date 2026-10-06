@@ -18,7 +18,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "quantidade" => $quantidade
     ];
 }
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
+    $produto = json_decode($conteudoJson, true);
+
+    $produto[] = $novoProduto;
+
+    $jsonAtualizado = json_encode(
+        $produto,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
+    
+    file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
 
 
 
@@ -39,9 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>CADASTRO DE PRODUTOS</h1>
         <label>Nome do fabricante:</label>
         <input type="text" name="fabricante" required>
-        <label>País de origem:</label>
         <br><br>
+        <label>País de origem:</label>
         <input type="text" name="origem" required>
+        <br><br>
         <label>Nome do produto:</label>
         <input type="text" name="nomeProduto" required>
         <br><br>
