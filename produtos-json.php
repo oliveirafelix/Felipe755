@@ -63,6 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br><br>
         <label>Quantidade em estoque:</label>
         <input type="text" name="quantidade" required>
+        <button type="submit">Enviar</button>
     </form>
     
     <h1>Produtos cadastrados</h1>
