@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "preco" => $preco,
         "quantidade" => $quantidade
     ];
-}
+
     $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
     $produto = json_decode($conteudoJson, true);
@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
+}
 ?>
 
 <!DOCTYPE html>
