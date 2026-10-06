@@ -70,16 +70,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <h1>Produtos cadastrados</h1>
     <?php foreach ($produto as $novoProduto) { ?>
-    <h2><?= $novoProduto["nome"] ?></h2>
+    <h2><?= $novoProduto["nomeProduto"] ?></h2>
         <h2>Dados do fabricante</h2>
-        <p>Fabricante: <? $novoProduto["novoProduto"]["fabricante"]?></p>
-        <p>País de origem: <? $novoProduto["novoProduto"]["origem"]?></p>
+        <p>Fabricante: <?= $novoProduto["fabricante"]?></p>
+        <p>País de origem: <?= $novoProduto["origem"]?></p>
         <h2>Dados do produto</h2>
-        <p>Nome do produto: <? $novoProduto["novoProduto"]["nomeProduto"]?></p>
-        <p>Categoria: <? $novoProduto["novoProduto"]["categoria"]?></p>
-        <p>Marca: <? $novoProduto["novoProduto"]["marca"]?></p>
-        <p>Preço: <? $novoProduto["novoProduto"]["preco"]?></p>
-        <p>Quantidade em estoque: <? $novoProduto["novoProduto"]["quantidade"]?></p>
+        <p>Nome do produto: <?= $novoProduto["nomeProduto"]?></p>
+        <p>Categoria: <?= $novoProduto["categoria"]?></p>
+        <p>Marca: <?= $novoProduto["marca"]?></p>
+        <p>Preço: <?= $novoProduto["preco"]?></p>
+        <p>Quantidade em estoque: <?= $novoProduto["quantidade"]?></p>
     <?php } ?>
 </body>
 </html>

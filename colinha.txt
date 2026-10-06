@@ -27,3 +27,13 @@ JSON_PRETTY_PRINT == para quando você passar o codigo para o json deixa bonito(
 JSON_UNESCAPED_UNICODE == para funcionar o caracteres especiais 
 os dois juntos == JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
 foreach == para cada registro de um array vai executar o código
+
+CRUD 
+C - CREATE 
+R - READ 
+U - UPDATE 
+D - DELETE
+
+PHP:
+file_put_contents - CREATE
+file_get_contents - READ
