@@ -70,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <h1>Produtos cadastrados</h1>
     <?php foreach ($produto as $novoProduto) { ?>
+    <h2><?= $novo_produto["nome"] ?></h2>
         <h2>Dados do fabricante</h2>
         <p>Fabricante: <? $novoProduto["novoProduto"]["fabricante"]?></p>
         <p>País de origem: <? $novoProduto["novoProduto"]["origem"]?></p>
