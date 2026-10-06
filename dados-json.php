@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $historia_prova3 = $_POST["historia_prova3"];
 
     // ================================
-    // ORGANIZA OS DADos EM UM ARRAY
+    // ORGANIZA OS DADOS EM UM ARRAY
     // ================================
     $novoAluno = [
         "nome" => $nome,
