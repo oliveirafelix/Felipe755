@@ -46,3 +46,13 @@ label {
     margin-bottom: 7px;
 }
 
+button {
+    display: inline-block;
+    background-color: #7c5cff;
+    color: #ffffff;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
