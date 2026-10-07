@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 footer {
     padding: 25px 10px;
     background-color: #0b0b10;
@@ -5,4 +8,11 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
+}
+body {
+    background-color: #F5F3EE;
+    color: #292D29;
+}
+form {
+    background-color: #ffffff;
 }

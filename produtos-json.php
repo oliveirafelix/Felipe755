@@ -42,36 +42,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
-    <form method="POST">
-        <h1>SISTEMA DE CADASTRO</h1>
-        <h2>cadastrando fabricante</h2>
-        <label>Nome do fabricante:</label>
-        <input type="text" name="fabricante" required>
-        <br><br>
-        <label>País de origem:</label>
-        <input type="text" name="origem" required>
-        <h2>cadastrando produto</h2>
-        <label>Nome do produto:</label>
-        <input type="text" name="nomeProduto" required>
-        <br><br>
-        <label>Categoria:</label>
-        <input type="text" name="categoria" required>
-        <br><br>
-        <label>Marca:</label>
-        <input type="text" name="marca" required>
-        <br><br>
-        <label>Preço:</label>
-        <input type="text" name="preco" required>
-        <br><br>
-        <label>Quantidade em estoque:</label>
-        <input type="text" name="quantidade" required>
-        <br><br>
-        <button type="submit">Enviar</button>
-    </form>
-    
-    <h1>Produtos cadastrados</h1>
-    <?php foreach ($produto as $novoProduto) { ?>
-    <h2><?= $novoProduto["nomeProduto"] ?></h2>
+        <form method="POST">
+            <h1>SISTEMA DE CADASTRO</h1>
+            <h2>cadastrando fabricante</h2>
+            <label>Nome do fabricante:</label>
+            <input type="text" name="fabricante" required>
+            <br><br>
+            <label>País de origem:</label>
+            <input type="text" name="origem" required>
+            <h2>cadastrando produto</h2>
+            <label>Nome do produto:</label>
+            <input type="text" name="nomeProduto" required>
+            <br><br>
+            <label>Categoria:</label>
+            <input type="text" name="categoria" required>
+            <br><br>
+            <label>Marca:</label>
+            <input type="text" name="marca" required>
+            <br><br>
+            <label>Preço:</label>
+            <input type="text" name="preco" required>
+            <br><br>
+            <label>Quantidade em estoque:</label>
+            <input type="text" name="quantidade" required>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h1>Produtos cadastrados</h1>
+        <?php foreach ($produto as $novoProduto) { ?>
+        <h2><?= $novoProduto["nomeProduto"] ?></h2>
         <h2>Dados do fabricante</h2>
         <p>Fabricante: <?= $novoProduto["fabricante"]?></p>
         <p>País de origem: <?= $novoProduto["origem"]?></p>
