@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // SERVE PARA LER/ABRIR ARQUIVO JSON
 
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/intro.json");
 
     // SEVE PARA CNVERETER JSON PARA ARRAY PHP
     // O true SERVE PARA CONVERTER O JSON EM ARRAY ASSOCIATIVO PARA PHP LER

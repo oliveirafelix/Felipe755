@@ -1,7 +1,7 @@
 <?php 
 
     //Caminho do arquivo JSON
-    $arquivo = __DIR__ . "/dados/teste.json";
+    $arquivo = __DIR__ . "../dados/teste.json";
 
     // 1. Ler o arquivo JSON
     $conteudo = file_get_contents($arquivo);

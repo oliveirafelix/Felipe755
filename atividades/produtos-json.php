@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "quantidade" => $quantidade
     ];
 
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/produtos.json");
 
     $produto = json_decode($conteudoJson, true);
 
