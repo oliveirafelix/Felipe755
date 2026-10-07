@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
     <form method="POST">
@@ -81,5 +82,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Preço: <?= $novoProduto["preco"]?></p>
         <p>Quantidade em estoque: <?= $novoProduto["quantidade"]?></p>
     <?php } ?>
+    <footer class="footer">
+        <p>
+            Desenvolvido por <a href="https://felipe755.devlook.xyz">Felipe Oliveira</a>
+        </p>
+        <p>
+            HTML + CSS + PHP
+        </p>
+    </footer>
 </body>
 </html>
