@@ -40,18 +40,9 @@ form h2 {
 }
 
 label {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    align-content: center;
     display: block;
     font-weight: bold;
     color: #475569;
     margin-bottom: 7px;
 }
 
-input {
-    display: block;
-    width: 80%;
-    margin: 0 auto 20px;
-}
