@@ -49,3 +49,10 @@ label {
     color: #475569;
     margin-bottom: 7px;
 }
+
+input {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
