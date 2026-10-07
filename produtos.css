@@ -41,6 +41,7 @@ form h2 {
 
 label {
     text-align: center;
+    align-items: center;
     display: block;
     font-weight: bold;
     color: #475569;
