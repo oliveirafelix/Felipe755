@@ -51,8 +51,7 @@ label {
 }
 
 input {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    align-content: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px;
 }
