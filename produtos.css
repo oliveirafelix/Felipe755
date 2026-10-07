@@ -8,7 +8,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #1e3a5f, #31506e);
     color: #1e293b;
-    min-height: 100vh;
     padding: 40px 20px;
 }
 
