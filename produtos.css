@@ -1,4 +1,4 @@
-* {
+/* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
       padding: 0;
@@ -31,4 +31,157 @@ h1 {
 
 h2 {
     color: #000000;
+}
+*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f1f5f9;
+color: #1e293b;
+padding: 40px 20px;
+}
+
+/* Formulário */
+
+form {
+max-width: 650px;
+margin: 0 auto 50px;
+background: #ffffff;
+padding: 35px;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+form h1 {
+text-align: center;
+color: #2563eb;
+margin-bottom: 10px;
+font-size: 28px;
+}
+
+form h2 {
+margin-top: 25px;
+margin-bottom: 18px;
+color: #334155;
+font-size: 20px;
+border-left: 4px solid #2563eb;
+padding-left: 10px;
+}
+
+label {
+display: block;
+margin-bottom: 7px;
+font-weight: bold;
+color: #475569;
+}
+
+input {
+width: 100%;
+padding: 12px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+font-size: 16px;
+outline: none;
+transition: 0.2s;
+background: #f8fafc;
+}
+
+input:focus {
+border-color: #2563eb;
+background: #ffffff;
+box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+button {
+width: 100%;
+padding: 13px;
+margin-top: 10px;
+border: none;
+border-radius: 8px;
+background: #2563eb;
+color: white;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.2s;
+}
+
+button:hover {
+background: #1d4ed8;
+transform: translateY(-1px);
+}
+
+button:active {
+transform: translateY(0);
+}
+
+/* Produtos cadastrados */
+
+body > h1 {
+max-width: 650px;
+margin: 0 auto 25px;
+color: #1e293b;
+font-size: 27px;
+}
+
+body > h2,
+body > p,
+body > hr {
+max-width: 650px;
+margin-left: auto;
+margin-right: auto;
+}
+
+body > h2 {
+background: #2563eb;
+color: white;
+padding: 12px 16px;
+border-radius: 8px;
+margin-top: 25px;
+margin-bottom: 15px;
+}
+
+body > p {
+background: white;
+padding: 12px 16px;
+margin-bottom: 2px;
+color: #475569;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+body > hr {
+border: none;
+border-top: 1px solid #cbd5e1;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+/* Rodapé */
+
+.footer {
+max-width: 650px;
+margin: 50px auto 0;
+padding: 25px;
+text-align: center;
+color: #64748b;
+border-top: 1px solid #cbd5e1;
+}
+
+.footer p {
+margin: 6px 0;
+}
+
+.footer a {
+color: #2563eb;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer a:hover {
+text-decoration: underline;
 }
