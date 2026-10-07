@@ -1,6 +1,9 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+      padding: 0;
 }
+
 footer {
     padding: 25px 10px;
     background-color: #0b0b10;
@@ -9,13 +12,23 @@ footer {
     justify-content: space-between;
     font-size: 13px;
 }
+
 body {
     background-color: #f5f3ee;
-    color: #292D29;
+    color: #1c1c1c;
 }
+
 form {
     background-color: #ffffff;
     padding: 10px;
     border: 1px solid #d8d2c8;
     border-radius: 10px;
+}
+
+h1 {
+    color: #8b5e3c;
+}
+
+h2 {
+    color: #8b5e3c;
 }
