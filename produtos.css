@@ -10,9 +10,11 @@ footer {
     font-size: 13px;
 }
 body {
-    background-color: #F5F3EE;
+    background-color: #f5f3ee;
     color: #292D29;
 }
 form {
     background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d8d2c8;
 }
