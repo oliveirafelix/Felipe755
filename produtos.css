@@ -1,41 +1,199 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-footer {
-    padding: 25px 10px;
-    background-color: #0b0b10;
-    color: #737380;
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: () linear-gradient(135deg #000000, #494949);
-    color: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 40px 20px;
 }
 
+/* =========================
+   FORMULÁRIO
+========================= */
+
 form {
-max-width: 650px;
-margin: 0 auto 50px;
-height: 600px;
-background: #ffffff;
-padding: 35px;
-border-radius: 16px;
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
 }
 
 form h1 {
-    color: #000000;
+    text-align: center;
+    color: #2563eb;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 form h2 {
-    color: #000000;
+    color: #334155;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
 }
 
-p {
-    size: 15px;
+label {
+    display: block;
+    font-weight: bold;
+    color: #475569;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   PRODUTOS CADASTRADOS
+========================= */
+
+body > h1 {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 28px;
+}
+
+body > h2 {
+    max-width: 650px;
+    margin: 25px auto 0;
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+    font-size: 21px;
+}
+
+body > p {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 9px 20px;
+    background-color: white;
+    color: #475569;
+    font-size: 16px;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+}
+
+body > p:last-of-type {
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 60px;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    form h1 {
+        font-size: 25px;
+    }
+
+    form h2 {
+        font-size: 18px;
+    }
+
+    body > h1 {
+        font-size: 24px;
+    }
+
+    body > h2 {
+        font-size: 18px;
+    }
+
+    body > p {
+        font-size: 14px;
+    }
 }
