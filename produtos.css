@@ -30,45 +30,6 @@ form {
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
 }
 
-form h1 {
-    text-align: center;
-    color: #2563eb;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-form h2 {
-    color: #334155;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 18px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    color: #475569;
-    margin-bottom: 7px;
-}
-
-input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
-    margin-bottom: 5px;
-}
-
-input:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
 /* =========================
    BOTÃO
 ========================= */
@@ -161,39 +122,4 @@ body > p:last-of-type {
 .footer a:hover {
     color: #93c5fd;
     text-decoration: underline;
-}
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 20px 12px;
-    }
-
-    form {
-        padding: 25px 20px;
-    }
-
-    form h1 {
-        font-size: 25px;
-    }
-
-    form h2 {
-        font-size: 18px;
-    }
-
-    body > h1 {
-        font-size: 24px;
-    }
-
-    body > h2 {
-        font-size: 18px;
-    }
-
-    body > p {
-        font-size: 14px;
-    }
 }
