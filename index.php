@@ -159,12 +159,33 @@
 
                     <h3>CADASTRO DE NOTAS</h3>
                     <p>
-                        Descrição do sistema 3
+                        Recebe notas e calcula a média do aluno e diz se o aluno está aprovado ou reprovado
                     </p>
 
                     <div class="tecnologias">
                         <span>HTML</span>
-                        <span>CSS</span>
+                        <!--span>CSS</span-->
+                        <span>PHP</span>
+                    </div>
+                    <a href="atividades/funcaos2.php">Ver projetos</a>
+                </div>
+
+                <!-- PROJETO 4 -->
+
+                <div class="card">
+
+                    <div class="numero-projeto">
+                        04
+                    </div>
+
+                    <h3>CADASTRO DE NOTAS</h3>
+                    <p>
+                        Recebe notas e calcula a média do aluno e diz se o aluno está aprovado ou reprovado
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <!--span>CSS</span-->
                         <span>PHP</span>
                     </div>
                     <a href="atividades/funcaos2.php">Ver projetos</a>
