@@ -24,8 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
     <label>Nota 2</label>
     <input type="text" name="nota2">
     <button type="submit">Enviar</button>
-
-
     </form>
     <p><?= $situacao ?></p>
 
