@@ -1,5 +1,8 @@
 <?php
-
+require_once "helpdesk-func.php";
+if ($_SERVER["REQUEST_METHOD"] == "POST")  {
+    
+}
 
 
 
@@ -16,6 +19,59 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <h1>Sistema de Chamados Técnicos</h1>
+
+    <h2>Abrir novo chamado</h2>
+
+    <form method="POST">
+
+        <label for="solicitante">Nome do funcionário:</label>
+        <input type="text" id="solicitante" name="solicitante" required>
+
+        <br><br>
+
+        <label for="setor">Setor da empresa:</label>
+        <select id="setor" name="setor" required>
+            <option value="Produção">Produção</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Logística">Logística</option>
+            <option value="Financeiro">Financeiro</option>
+            <option value="TI">TI</option>
+        </select>
+
+        <br><br>
+
+        <label for="equipamento">Equipamento afetado:</label>
+        <select id="equipamento" name="equipamento" required>
+            <option value="Computador">Computador</option>
+            <option value="Impressora">Impressora</option>
+            <option value="Rede">Rede</option>
+            <option value="Sistema">Sistema</option>
+            <option value="Outro">Outro</option>
+        </select>
+
+        <br><br>
+
+        <label for="descricao">Descrição do problema:</label>
+        <br>
+        <textarea id="descricao" name="descricao"
+                  rows="5" cols="40" required></textarea>
+
+        <br><br>
+
+        <label for="prioridade">Prioridade:</label>
+        <select id="prioridade" name="prioridade" required>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Registrar chamado</button>
+
+    </form>
+
 </body>
 </html>
