@@ -27,9 +27,9 @@ function calcularMedia($nota1, $nota2) {
 function verificarStatus($media) {
     // MÉDIA É 7
     if ($media >= 7) {
-        return "É de maior";
+        return "APROVADO";
     } else {
-        return "É de menor";
+        return "REPROVADO";
     }
 }
 
