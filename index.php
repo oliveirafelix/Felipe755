@@ -167,7 +167,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="produtos-json.php">Ver projetos</a>
+                    <a href="atividades/funcaos2.php">Ver projetos</a>
                 </div>
 
             </div>
