@@ -64,14 +64,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     // SALVAR NO ARQUIVO JSON
-    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+    file_put_contents(__DIR__ . "../dados/intro.json", $jsonAtualizado);
 
 }
     
 // LEITURA DOS DADOS PARA EXIBIÇÂO
 
 // L~e o arquivo JSON
-$conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+$conteudoJson = file_get_contents(__DIR__ . "../dados/intro.json", $jsonAtualizado);
 
 // Converte o JSON para ARRAY PHP
 $alunos = json_decode($conteudoJson, true);
