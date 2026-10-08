@@ -1,7 +1,12 @@
 <?php
 require_once "helpdesk-func.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST")  {
-    
+    $solicitante = $_POST["solicitante"];
+    $setor = $_POST["setor"];
+    $equipamento = $_POST["equipamento"];
+    $descricao = $_POST["descricao"];
+    $prioridade = $_POST["prioridade"];
+
 }
 
 
@@ -26,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
     <form method="POST">
 
-        <label for="solicitante">Nome do funcionário:</label>
+        <label>Nome do funcionário:</label>
         <input type="text" id="solicitante" name="solicitante" required>
 
         <br><br>
 
-        <label for="setor">Setor da empresa:</label>
+        <label>Setor da empresa:</label>
         <select id="setor" name="setor" required>
             <option value="Produção">Produção</option>
             <option value="Administrativo">Administrativo</option>
@@ -42,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
         <br><br>
 
-        <label for="equipamento">Equipamento afetado:</label>
+        <label>Equipamento afetado:</label>
         <select id="equipamento" name="equipamento" required>
             <option value="Computador">Computador</option>
             <option value="Impressora">Impressora</option>
@@ -53,14 +58,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
         <br><br>
 
-        <label for="descricao">Descrição do problema:</label>
+        <label>Descrição do problema:</label>
         <br>
         <textarea id="descricao" name="descricao"
                   rows="5" cols="40" required></textarea>
 
         <br><br>
 
-        <label for="prioridade">Prioridade:</label>
+        <label>Prioridade:</label>
         <select id="prioridade" name="prioridade" required>
             <option value="Baixa">Baixa</option>
             <option value="Média">Média</option>

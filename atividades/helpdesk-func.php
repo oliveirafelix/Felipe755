@@ -1,14 +1,8 @@
 <?php
 
-function saudacao() {
-    return "Bem vindo ao sistema!";
-}
+$arquivo = __DIR__ . "../dados/chamados.json";
 
-function cumprimentar($nome) {
-    return "Olá, " . $nome . "!";
-}
-
-
+$conteudo = file_get_contents($arquivo);
 
 
 
