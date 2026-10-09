@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
         $descricao,
         $prioridade
     );
+    $chamados = listarChamado();
 }
 
 
@@ -86,7 +87,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
     </form>
 
     <h2>Chamados</h2>
-    <p>Funcionário: <?= $solicitante ?></p>
+    <?php foreach ($chamados as $chamado) { ?>
+    <h2><b>Funcionário:</b> <?= $chamado["solicitante"] ?></h2>
+    <br>
+    <p><b>Setor:</b> <?= $chamado["setor"] ?></p>
+    <br>
+    <p><b>Equipamento afetado</b> <?= $chamado["equipamento"] ?></p>
+    <br>
+    <p><b>Descrição do problema:</b> <?= $chamado["descricao"] ?></p>
+    <br>
+    <p><b>Prioridade:</b> <?= $chamado["prioridade"] ?></p>
+    
+
+    <?php } ?>
 
 </body>
 </html>

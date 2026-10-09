@@ -25,7 +25,13 @@ function cadastrarChamado($solicitante, $setor, $equipamento, $descricao, $prior
     return true;
 }
 
+function listarChamado() {
+    $arquivo = "chamados.json";
+    
+    $dados = file_get_contents($arquivo);
 
+    return json_decode($dados, true);
+}
 
 
 ?>
