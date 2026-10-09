@@ -1,9 +1,22 @@
 <?php
 
-$arquivo = __DIR__ . "../dados/chamados.json";
+function cadastrarChamado($solicitante, $setor, $equipamento, $descricao, $prioridade) {
 
-$conteudo = file_get_contents($arquivo);
+    $arquivo = __DIR__ . "../dados/chamados.json";
 
+    $conteudo = file_get_contents($arquivo);
+
+    $chamados = [];
+
+    $chamado = [
+        "solicitante" => $solicitante,
+        "setor" => $setor,
+        "equipamento" => $equipamento,
+        "descricao" => $descricao,
+        "prioridade" => $prioridade
+    ];
+
+}
 
 
 ?>

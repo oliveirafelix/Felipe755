@@ -7,6 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
     $descricao = $_POST["descricao"];
     $prioridade = $_POST["prioridade"];
 
+    cadastrarChamado(
+        $solicitante,
+        $setor,
+        $equipamento,
+        $descricao,
+        $prioridade
+    );
 }
 
 
