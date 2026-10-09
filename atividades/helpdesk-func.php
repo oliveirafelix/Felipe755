@@ -31,6 +31,7 @@ function listarChamado() {
     $dados = file_get_contents($arquivo);
 
     return json_decode($dados, true);
+    
 }
 
 
