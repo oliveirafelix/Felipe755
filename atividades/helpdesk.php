@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
         $descricao,
         $prioridade
     );
-    $dados = listarChamado();
+    $chamados = listarChamado();
 }
 
 
