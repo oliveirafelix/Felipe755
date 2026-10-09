@@ -85,5 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
     </form>
 
+    <h2></h2>
+
 </body>
 </html>

@@ -16,6 +16,13 @@ function cadastrarChamado($solicitante, $setor, $equipamento, $descricao, $prior
         "prioridade" => $prioridade
     ];
 
+    $chamados[] = $chamado;
+
+    json_encode(
+        $arquivo,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
+    return true;
 }
 
 
