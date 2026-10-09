@@ -88,11 +88,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
     <h2>Chamados</h2>
     <?php foreach ($chamados as $chamado) { ?>
-    <h2><b>Funcionário:</b> <?= $chamado["solicitante"] ?></h2>
-    <p><b>Setor:</b> <?= $chamado["setor"] ?></p>
-    <p><b>Equipamento afetado</b> <?= $chamado["equipamento"] ?></p>
-    <p><b>Descrição do problema:</b> <?= $chamado["descricao"] ?></p>
-    <p><b>Prioridade:</b> <?= $chamado["prioridade"] ?></p>
+    <h2><b>Funcionário:</b> <?= $solicitante ?></h2>
+    <p><b>Setor:</b> <?= $setor ?></p>
+    <p><b>Equipamento afetado</b> <?= $equipamento ?></p>
+    <p><b>Descrição do problema:</b> <?= $descricao ?></p>
+    <p><b>Prioridade:</b> <?= $prioridade ?></p>
     <hr>
     
 
