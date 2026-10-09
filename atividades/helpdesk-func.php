@@ -4,7 +4,7 @@ function cadastrarChamado($solicitante, $setor, $equipamento, $descricao, $prior
 
     $arquivo = __DIR__ . "../dados/chamados.json";
 
-    $conteudo = file_get_contents($arquivo);
+    $conteudo = file_put_contents("chamados.json", $arquivo);
 
     $chamados = [];
 
