@@ -1,12 +1,12 @@
 <?php
 require_once "helpdesk-func.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST")  {
-    $solicitante = $_POST["solicitante"];
-    $setor = $_POST["setor"];
-    $equipamento = $_POST["equipamento"];
-    $descricao = $_POST["descricao"];
-    $prioridade = $_POST["prioridade"];
-
+        $solicitante = $_POST["solicitante"];
+        $setor = $_POST["setor"];
+        $equipamento = $_POST["equipamento"];
+        $descricao = $_POST["descricao"];
+        $prioridade = $_POST["prioridade"];
+        
     cadastrarChamado(
         $solicitante,
         $setor,
@@ -85,7 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
 
     </form>
 
-    <h2></h2>
+    <h2>Chamados</h2>
+    <p>Funcionário: <?= $solicitante ?></p>
 
 </body>
 </html>

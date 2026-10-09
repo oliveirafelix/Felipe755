@@ -26,4 +26,6 @@ function cadastrarChamado($solicitante, $setor, $equipamento, $descricao, $prior
 }
 
 
+
+
 ?>
