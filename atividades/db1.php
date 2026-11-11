@@ -66,6 +66,10 @@
         $stmt->execute(["id" => $id]);
         $produtoEditar = $stmt->fetch(PDO::FETCH_ASSOC);
     }
+    // 6. LISTAR TODOS OS PRODUTOS
+    $sql = "SELECT * FROM produtos ORDER BY id ASC";
+    $stmt = $pdo->query($sql);
+    $produtos = $stmt->fetchALL(PDO :: FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
