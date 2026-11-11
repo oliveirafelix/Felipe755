@@ -80,9 +80,9 @@
     <h2>
         <?php
             if ($produtoEditar) {
-                echo "Editar produto"
+                echo "Editar produto";
             } else {
-                echo "Cadastrar Produto"
+                echo "Cadastrar Produto";
             }
         ?>
         
