@@ -2,7 +2,7 @@
     require_once "conexao.php";
 
     // 1. CRIAR TABELA
-    sql = "CREATE TABLE IF NOT EXISTS produtos (
+    $sql = "CREATE TABLE IF NOT EXISTS produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL, 
     preco DECIMAL (10,2) NOT NULL,
@@ -84,9 +84,9 @@
     <h2>
         <?php
             if ($produtoEditar) {
-                echo "Editar produto"
+                echo "Editar produto";
             } else {
-                echo "Cadastrar Produto"
+                echo "Cadastrar Produto";
             }
         ?>
         
