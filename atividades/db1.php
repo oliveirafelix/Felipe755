@@ -1,5 +1,5 @@
 <?php
-require_once "../conexao.php";
+require_once '../conexao.php';
 
 // 1. CRIAR TABELA
 $sql = "CREATE TABLE IF NOT EXISTS produtos (
@@ -110,7 +110,7 @@ $produtos = $stmt->fetchALL(PDO::FETCH_ASSOC);
         <tr>
             <!-- TH | Table Header | Cria uma célula de cabeçalho na tabela -->
             <th>Id</th>
-            <th>Nome </th>
+            <th>Nome</th>
             <th>Preço</th>
             <th>Quantidade</th>
             <th>Ações</th>
@@ -128,8 +128,8 @@ $produtos = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
                     <!-- EXLUIR -->
 
-                    <form post="POST" action="db1.php" style="display:inline;">
-                        <input type="hidden" name="id" value="<?= $produto['id']?>">
+                    <form method="POST" action="db1.php" style="display:inline;">
+                        <input type="hidden" name="id" value="<?= $produto['id'] ?>">
                         <button type="submit" name="excluir" onclick="return confirm ('Deseja excluir este produto?')">Excluir</button>
                     </form>
                 </td>
