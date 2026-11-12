@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero, .cadastro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar {
+    margin: 20px;
+    padding: 15px;
+    background-color: #eee;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
