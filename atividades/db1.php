@@ -1,5 +1,5 @@
 <?php
-    require_once "conexao.php";
+    require_once "../conexao.php";
 
     // 1. CRIAR TABELA
     $sql = "CREATE TABLE IF NOT EXISTS produtos (
