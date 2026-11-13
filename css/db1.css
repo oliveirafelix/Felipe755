@@ -22,7 +22,8 @@ h2 {
 
 form {
     background-color: #B69A65;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 25px;
     border-radius: 20px;
 }
