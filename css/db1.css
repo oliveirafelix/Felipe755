@@ -19,3 +19,10 @@ h2 {
     color: #E8DDC9;
     margin: 10px;
 }
+
+form {
+    background-color: #B69A65;
+    width: 500px;
+    margin: 25px;
+    border-radius: 20px;
+}
