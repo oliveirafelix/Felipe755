@@ -7,7 +7,7 @@ link para prova == www.w3schools.com/cssref/
 
 pwd = mostra onde esta no linux
 ls = lista arquivos e pastas onde estão
-ssh felipe755@193.111.116.99 = logar no linux
+ssh felipe755@194.61.238.119 = logar no linux
 cd www = nn sei pra q, mas pra logar
 git pull = pra salvar
 mkdir 'nome da pasta' = criar nova pasta
