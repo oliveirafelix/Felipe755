@@ -27,3 +27,7 @@ form {
     margin: 25px;
     border-radius: 20px;
 }
+
+label {
+    margin: 10px;
+}
