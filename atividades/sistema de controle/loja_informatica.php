@@ -168,6 +168,24 @@ $produtos = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 }
                 ?>
 
-    
+<form method="POST">
+    <?php if ($produtoEditar) { ?>
+    <input type="hidden" name="id" value="<?= $produtoEditar['id'] ?>">
+    <?php } ?>
+    <label>Nome do Produto:</label>
+    <input type="text" name="nome" value="<?= $produtoEditar['nome'] ?? '' ?>">
+    <br><br>
+    <label>Preço:</label>
+    <input type="number" name="preco" step="0.01" min="0" required value="<?= $produtoEditar['preco'] ?? '' ?>">
+    <br><br>
+    <label>Quantidade:</label>
+    <input type="number" name="quantidade" min="0" required value="<?= $produtoEditar['quantidade'] ?? '' ?>">
+    <br><br>
+    <?php if ($produtoEditar) { ?>
+    <button type="submit" name="atualizar">Atualizar Produto</button>
+    <?php } else { ?>
+    <button type="submit" name="cadastrar">Cadastrar produto</button>
+    <?php } ?>
+</form>
 </body>
 </html>

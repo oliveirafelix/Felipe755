@@ -188,7 +188,7 @@
                         <!--span>CSS</span-->
                         <span>Banco de Dados</span>
                     </div>
-                    <a href="atividades/db1.php">Ver projetos</a>
+                    <a href="atividades/sistema de controle/loja_informatica.php">Ver projetos</a>
                 </div>
 
             </div>
