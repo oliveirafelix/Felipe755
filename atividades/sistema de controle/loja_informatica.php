@@ -34,8 +34,6 @@ $sql = "CREATE TABLE IF NOT EXISTS vendas (
 $pdo->exec($sql);
 
 
-// CADASTRANDO CATEGORIAS E PRODUTOS INICIAIS
-
 $sql = "SELECT COUNT(*) FROM categorias";
 $total = $pdo->query($sql)->fetchColumn();
 
