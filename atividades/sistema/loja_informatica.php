@@ -208,11 +208,11 @@ $produtos = $stmt->fetchALL(PDO::FETCH_ASSOC);
         <td><?= $produto["quantidade"] ?></td>
         <td>
             <!-- EDITAR -->
-            <a href="sistema%20de%20controle/loja_informatica.php?editar=<?= $produto['id'] ?>">Editar</a>
+            <a href="sistema/loja_informatica.php?editar=<?= $produto['id'] ?>">Editar</a>
             
             <!-- EXLUIR -->
             
-            <form method="POST" action="loja_informatica.php" style="display:inline;">
+            <form method="POST" action="sistema/loja_informatica.php" style="display:inline;">
                 <input type="hidden" name="id" value="<?= $produto['id'] ?>">
                 <button type="submit" name="excluir" onclick="return confirm ('Deseja excluir este produto?')">Excluir</button>
             </form>
