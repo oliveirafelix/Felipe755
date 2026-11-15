@@ -123,6 +123,8 @@ if (isset($_POST["atualizar"])) {
     }
 }
 
+// Excluir produto
+
 if (isset($_POST["excluir"])) {
     $id = $_POST["id"];
     $sql = "DELETE FROM produtos WHERE id = $id";
