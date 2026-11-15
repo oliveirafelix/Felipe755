@@ -178,46 +178,36 @@ if ($produtoEditar) {
 <form method="POST">
 
     <?php if ($produtoEditar) { ?>
-        <input type="hidden" name="id"
-        value="<?= $produtoEditar['id'] ?>">
+        <input type="hidden" name="id" value="<?= $produtoEditar['id'] ?>">
     <?php } ?>
 
     <label>Nome do Produto:</label>
 
-    <input type="text" name="nome" required
-    value="<?= htmlspecialchars($produtoEditar['nome'] ?? '') ?>">
+    <input type="text" name="nome" required value="<?= htmlspecialchars($produtoEditar['nome'] ?? '') ?>">
 
     <br><br>
 
     <label>ID da Categoria:</label>
 
-    <input type="number" name="categoria_id"
-    min="1" required
-    value="<?= $produtoEditar['categoria_id'] ?? '' ?>">
+    <input type="number" name="categoria_id" min="1" required value="<?= $produtoEditar['categoria_id'] ?? '' ?>">
 
     <br><br>
 
     <label>Preço:</label>
 
-    <input type="number" name="preco"
-    step="0.01" min="0.01" required
-    value="<?= $produtoEditar['preco'] ?? '' ?>">
+    <input type="number" name="preco" step="0.01" min="0.01" required value="<?= $produtoEditar['preco'] ?? '' ?>">
 
     <br><br>
 
     <label>Quantidade:</label>
 
-    <input type="number" name="quantidade"
-    min="0" required
-    value="<?= $produtoEditar['quantidade'] ?? '' ?>">
+    <input type="number" name="quantidade" min="0" required value="<?= $produtoEditar['quantidade'] ?? '' ?>">
 
     <br><br>
 
     <label>Estoque mínimo:</label>
 
-    <input type="number" name="estoque_minimo"
-    min="0" required
-    value="<?= $produtoEditar['estoque_minimo'] ?? '' ?>">
+    <input type="number" name="estoque_minimo"min="0" required value="<?= $produtoEditar['estoque_minimo'] ?? '' ?>">
 
     <br><br>
 
@@ -227,7 +217,7 @@ if ($produtoEditar) {
             Atualizar Produto
         </button>
 
-        <a href="index.php">Cancelar</a>
+        <a href="loja_informatica.php">Cancelar</a>
 
     <?php } else { ?>
 
