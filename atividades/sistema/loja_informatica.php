@@ -228,7 +228,65 @@ if ($produtoEditar) {
     <?php } ?>
 
 </form>
+<hr>
+<h2>Produtos cadastrados</h2>
+<table>
+<tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Categoria ID</th>
+    <th>Preço</th>
+    <th>Quantidade</th>
+    <th>Estoque mínimo</th>
+    <th>Situação</th>
+    <th>Ações</th>
+</tr>
 
+<?php foreach ($produtos as $produto) { ?>
+
+<tr>
+
+    <td><?= $produto['id'] ?></td>
+
+    <td><?= htmlspecialchars($produto['nome']) ?></td>
+
+    <td><?= $produto['categoria_id'] ?></td>
+
+    <td>R$ <?= number_format($produto['preco'], 2, ',', '.') ?></td>
+
+    <td><?= $produto['quantidade'] ?></td>
+
+    <td><?= $produto['estoque_minimo'] ?></td>
+
+    <td>
+
+        <?php
+
+        if ($produto['quantidade'] == 0) {
+            echo "ESGOTADO";
+        } else if ($produto['quantidade'] <= $produto['estoque_minimo']) {
+            echo "ESTOQUE BAIXO";
+        } else {
+            echo "DISPONÍVEL";
+        }
+
+        ?>
+
+    </td>
+
+    <td>
+
+        <a href="loja_informatica.php?editar=<?= $produto['id'] ?>">
+            Editar
+        </a>
+
+        <form method="POST" action="loja_informatica.php" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+                <button type="submit" name="excluir" onclick="return confirm ('Deseja excluir este produto?')">Excluir</button>
+            </form>
+    </td>
+</tr>
+<?php } ?>
+</table>
 </body>
 </html>
-
