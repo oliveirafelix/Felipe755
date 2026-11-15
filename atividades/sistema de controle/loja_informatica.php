@@ -208,7 +208,7 @@ $produtos = $stmt->fetchALL(PDO::FETCH_ASSOC);
         <td><?= $produto["quantidade"] ?></td>
         <td>
             <!-- EDITAR -->
-            <a href="loja_informatica.php?editar=<?= $produto['id'] ?>">Editar</a>
+            <a href="sistema%20de%20controle/loja_informatica.php?editar=<?= $produto['id'] ?>">Editar</a>
             
             <!-- EXLUIR -->
             
